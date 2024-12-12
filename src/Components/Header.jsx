@@ -1,21 +1,21 @@
 import React from 'react';
-import { FaPhoneAlt, FaClock, FaMapMarkerAlt, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
-
+import { FaPhone, FaClock, FaMapMarkerAlt,FaUser } from 'react-icons/fa';
+import { GoClock } from "react-icons/go";
 const Header = () => {
   return (
-    <div className="bg-primary text-white flex items-center justify-between px-4 p-2 text-[8px] font-sans">
+    <div className="bg-[#002E5B] text-white flex items-center justify-between px-4 p-2 text-[8px] font-sans">
       {/* Left Section */}
       <div className="flex items-center gap-6">
       <div className="flex items-center gap-1">
-      <i className="fas fa-phone-alt"></i>
+      <FaPhone/>
           <span>+1 212-226-3126</span>
         </div>
         <div className="flex items-center gap-1 ">
-        <i className="fas fa-map-marker-alt"></i>
-          <span>1010 Moon Ave, New York, NY US</span>
+        <FaMapMarkerAlt/>
+          <span>Greencoat House, 259 Stafford Road, Birmingham, B11 1QS</span>
         </div>
         <div className="flex items-center gap-1">
-        <i className="fas fa-clock"></i>
+        <GoClock/>
           <span>Mon - Sat 8.00 - 18.00</span>
         </div>
         
@@ -25,12 +25,12 @@ const Header = () => {
       {/* Right Section */}
       <div className="flex items-center gap-2">
         <div className="flex items-center gap-2 cursor-pointer">
-        <a href="/login" className="flex items-center gap-1 hover:underline">
-          <i className="fas fa-user"></i> Login
+        <a href="/login" className="flex items-center gap-1  ">
+         <FaUser/> Login
         </a>
         <span>|</span>
         </div>
-        <a href="/register" className="flex items-center hover:underline">
+        <a href="/register" className="flex items-center ">
            Register
         </a>
       </div>

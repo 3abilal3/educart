@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Components/Header'; // Adjust the path if needed
 import Navbar from "./Components/Navbar";
+import Login from './Components/Sign-in';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
         <Route path="/about" element={<div>About Us Page</div>} />
         <Route path="/contact" element={<div>Contact Us Page</div>} />
         <Route path="/shop" element={<div>Shop Page</div>} />
-        <Route path="/login" element={<div>Login Page</div>} />
+        <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<div>Register Page</div>} />
       </Routes> 
      </Router> 
